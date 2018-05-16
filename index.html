@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test task</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+	<div class="wrapper container-fluid px-0">
+
+		<div class="prices-block container px-md-0 d-flex justify-content-center">
+			<div class="item left gradient-left">
+				<img src="img/icon_amount_green.svg" alt="">
+				<h4>Amount due</h4>
+				<p class="text">Billing period
+					<span>01/02/2018 - 01/31/2018</span>
+				</p>
+				<p class="price">
+					<span>&#36</span>50</p>
+				<p class="text">Due date
+					<span>02/28/2018</span>
+				</p>
+				<div class="view-block">
+					<a href="#" class="view">View my bill
+						<i class="fas fa-chevron-right"></i>
+					</a>
+				</div>
+				<div class="btn-section">
+					<button href="#" class="button">pay</butto>
+				</div>
+			</div>
+			<div class="item right gradient-right">
+				<img src="img/icon_auto_pay.svg" alt="">
+				<h4>Auto-pay</h4>
+				<p class="dark-text text-center">You already have auto payment
+					<br> via Stripe/PayPal on sum
+					<span>&#36;57</span> and is paid
+					<br> automatically on 17-th day of month. Next
+					<br> payment will be done on
+					<span>12/17/2017</span>
+				</p>
+				<div class="btn-section">
+					<button href="#" class="button">manage</button>
+				</div>
+			</div>
+		</div>
+		<div class="table-block container px-md-0">
+			<h4 class="text-center">Last Account activities</h4>
+			<div class="row mx-md-0">
+				<div class="col-md-8 px-md-0 offset-md-2">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Date</th>
+								<th scope="col">Activity</th>
+								<th scope="col">Sum</th>
+								<th scope="col">Balance</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span>12/11/17</span>
+									<br> 05:34 pm</td>
+								<td>Internet fee</td>
+								<td>
+									<span class="red d-none d-sm-block">- &#36;1.00</span>
+									<span class="red d-block d-sm-none">- &#36;1</span>
+									
+								</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;19.00</span>
+									<span class="green d-block d-sm-none">&#36;19</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>12/11/17</span>
+									<br> 05:27 pm</td>
+								<td>Payment via PayPal</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;10.00</span>
+									<span class="green d-block d-sm-none">&#36;10</span>
+								</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;18.00</span>
+									<span class="green d-block d-sm-none">&#36;18</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>12/11/17</span>
+									<br> 12:52 pm</td>
+								<td>Internet fee</td>
+								<td>
+									<span class="red d-none d-sm-block">- &#36;50.00</span>
+									<span class="red d-block d-sm-none">-&#36;50</span>
+								</td>
+								<td>
+									<span class="red d-none d-sm-block">- &#36;8.00</span>
+									<span class="red d-block d-sm-none">- &#36;8</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>12/11/17</span>
+									<br> 05:27 pm</td>
+								<td>Payment via PayPal</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;10.00</span>
+									<span class="green d-block d-sm-none">&#36;10</span>
+								</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;18.00</span>
+									<span class="green d-block d-sm-none">&#36;18</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>12/11/17</span>
+									<br> 05:27 pm</td>
+								<td>Payment via PayPal</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;1.00</span>
+									<span class="green d-block d-sm-none">&#36;1</span>
+								</td>
+								<td>
+									<span class="green d-none d-sm-block">&#36;8.00</span>
+									<span class="green d-block d-sm-none">&#36;8</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="all-transactions text-center">
+					<a href="#" class="transactions">all transactions<i class="fas fa-chevron-right"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+	 crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
