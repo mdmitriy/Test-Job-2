@@ -29,17 +29,27 @@ button:focus {
 	margin: 30px 0;
 	padding-bottom: 95px;
 }
+.prices-block {
+	display: flex !important;
+    flex-wrap: wrap;
+}
 .prices-block .item {
 	background-color: #fff;
 	width: 455px;
-	height: 460px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	position: relative;
 	margin-top: 100px;
 	margin-bottom: 50px;
 	border-radius: 5px;
+}
+.prices-block .item-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 40px 70px 50px 70px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
 }
 .prices-block .item.left {
 	margin-right: 30px;
@@ -75,17 +85,18 @@ button:focus {
 .prices-block .item img {
 	height: 60px;
 	width: 60px;
-	margin-top: 35px;
+	/* margin-top: 35px; */
 }
 .prices-block .item h4 {
 	margin: 20px 0;
 }
 .prices-block .item .text {
-	font-size: 15px;
+	font-size: 14px;
 	color: #75737d;
 }
 .prices-block .item .text span {
 	font-weight: 600;
+	font-size: 15px;
 }
 .prices-block .item .price {
 	font-size: 50px;
@@ -94,6 +105,14 @@ button:focus {
 }
 .prices-block .item .price span {
 	font-size: 35px;
+}
+.prices-block .item .bottom-text {
+	font-size: 15px;
+	color: #75737d;
+}
+.prices-block .item .bottom-text span {
+	font-weight: 600;
+	font-size: 16px;
 }
 .prices-block .item .view-block {
 	margin-top: 35px;
@@ -133,14 +152,16 @@ button:focus {
 } 
 .prices-block .item .dark-text span {
 	font-weight: 600;
+	font-size: 18px;
 }
 .prices-block .item .btn-section {
-	position: absolute;
-	bottom: 45px;
+	/* position: absolute;
+	bottom: 45px; */
 }
 
 .table-block {
 	background-color:#fff; 
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
 }
 .table-block h4 {
 	padding-bottom: 40px;
@@ -216,7 +237,9 @@ button:focus {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991.98px) {
-
+	.prices-block .right .btn-section {
+		margin-top: 50px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -240,19 +263,34 @@ button:focus {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575.98px) {
+	.wrapper {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	.table-block,
+	.prices-block {
+		padding: 0 !important;
+	}
 	.prices-block .item {
 		width: 100%;
-		height: 415px;
+		/* height: 415px; */
 	}
 	.prices-block .item br {
 		display: none;
 	}
-	.prices-block .item .view-block {
-		margin-bottom: 25px;
-		margin-top: 25px;
+	.prices-block .item-inner {
+		padding-bottom: 40px;
+		padding-top: 35px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
-	.prices-block .item .btn-section {
-		bottom: 40px;
+	.prices-block .item .view-block {
+		margin-bottom: 29px;
+		margin-top: 29px;
+	}
+	.prices-block .item img {
+		height: 50px;
+		width: 50px;
 	}
 	.prices-block .item h4 {
 		font-size: 16px;
@@ -260,7 +298,10 @@ button:focus {
 	.prices-block .item .text,
 	.prices-block .item .view-block a,
 	.prices-block .item .btn-section .button,
-	.prices-block .item .dark-text {
+	.prices-block .item .dark-text,
+	.prices-block .item .text span,
+	.prices-block .item .bottom-text,
+	.prices-block .item .bottom-text span {
 		font-size: 14px;
 	}
 	.prices-block .item .price {
@@ -269,11 +310,28 @@ button:focus {
 	.prices-block .item .price span {
 		font-size: 30px;
 	}
+	.prices-block .item .dark-text span {
+		font-size: 16px;
+	}
+	.prices-block  .gradient-left::before {
+		height: 6px;
+	}
+	.prices-block  .gradient-right::before {
+		height: 6px;
+	}
+	.prices-block .btn-section,
+	.prices-block .btn-section button.button {
+		width: 100%;
+	}
 
 	.table-block h4 {
 		padding-bottom: 25px;
 		padding-top: 40px;
+		font-size: 16px;
 	}
+	/* .table-block tr td:first-child {
+		padding: 10px !important;
+	} */
 	.table-block tr td,
 	.table-block thead th {
 		font-size: 12px !important;
@@ -282,9 +340,26 @@ button:focus {
 	.table-block tr .red {
 		font-size: 14px;
 	}
+	.table-block tr td:last-child,
+	.table-block tr th:last-child{
+		text-align: center;
+	}
+	.table-block .table th {
+		padding:12px 9px;
+	} 
+	.table-block .table td {
+		padding:18px 9px;
+	}
 	.table-block .all-transactions {
 		padding-top: 20px;
 		padding-bottom: 40px;
+	}
+	.table-block .all-transactions a.transactions {
+		font-size: 14px;
+	}
+	.table-block .table-inner {
+		padding-left: 7px;
+		padding-right: 7px;
 	}
 
 	
